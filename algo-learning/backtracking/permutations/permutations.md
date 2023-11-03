@@ -16,5 +16,15 @@
 
 <img src="https://www.hello-algo.com/chapter_backtracking/permutations_problem.assets/permutations_i_pruning.png">
 
+## 有相等元素
 
+输入一个整数数组，例如[1, 1, 2]，数组中可能包含重复元素，返回所有不重复的排列。
+
+如果继续采用上述办法，可以发现会有一半的排列都是重复的。最直接的去除重复的办法是通过一个哈希表，直接对排列结果进行去重，但这样没有从根本上解决问题。因为重复排列的选择分支是不该存在的，应该对其进行剪枝，从而减小时间和空间复杂度。
+
+对于含有相等元素的数组，除了之前选择的元素不能被再次选择外，每一轮每个元素也只能选择一次。
+
+<img src="https://www.hello-algo.com/chapter_backtracking/permutations_problem.assets/permutations_ii_pruning.png">
+
+时间复杂度为$O(n!n)$，空间复杂度为$O(n^2)$。
 
