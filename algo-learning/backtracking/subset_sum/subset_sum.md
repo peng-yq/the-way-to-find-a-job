@@ -22,3 +22,13 @@
 <img src="https://www.hello-algo.com/chapter_backtracking/subset_sum_problem.assets/subset_sum_i_pruning.png">
 
 因此除了上述参数，模板函数的参数还需要包括目标值以及选择的起始索引。
+
+## 有重复元素
+
+给定一个正整数数组nums和一个目标正整数target ，请找出所有可能的组合，使得组合中的元素和等于target。给定数组可能包含重复元素，每个元素只可被选择一次。请以列表形式返回这些组合，列表中不应包含重复组合。
+
+当给定数组中可能包含重复元素时，需要进行剪枝，例如给定数组为{4, 4, 5}，目标元素为9，按照无重复元素的算法，得到的答案为{4, 5}和{4, 5}，需要在第一轮选择时直接剪掉第二个4那个分支。由于数组是排序的，只需比较选择的元素是否等于上一个索引的元素，若相等说明此次选择重复，进行剪枝。
+
+此外，每个元素只可被选择一次，也就是每次选择的开始索引要从上次选择的开始索引的下一位开始。
+
+<img src="https://www.hello-algo.com/chapter_backtracking/subset_sum_problem.assets/subset_sum_ii.png">
