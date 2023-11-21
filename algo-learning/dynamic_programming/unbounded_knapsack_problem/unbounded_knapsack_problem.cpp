@@ -16,6 +16,19 @@ int unboundedKnapsackDP(vector<int> &wgt, vector<int> &val, int cap) {
     return dp[n][cap];
 }
 
+int unboundedKnapsackDPComp(vector<int> &wgt, vector<int> &val, int cap) {
+    int n = wgt.size();
+    vector<int> dp(cap + 1, 0);
+    for (int i = 1; i <= n; i++) {
+        for (int c = 1; c <= cap; c++) {
+            if (wgt[i - 1] <= c) {
+                dp[c] = max(dp[c], dp[c - wgt[i - 1]] + val[i - 1]);
+            }
+        }
+    }
+    return dp[cap];
+}
+
 int coinChangeDP(vector<int> &coins, int amt) {
     int n = coins.size();
     vector<vector<int>>dp(n+1, vector<int> (amt+1,0));
@@ -35,6 +48,23 @@ int coinChangeDP(vector<int> &coins, int amt) {
     return dp[n][amt] == amt + 1? -1:dp[n][amt];
 }
 
+int coinChangeDPComp(vector<int> &coins, int amt) {
+    int n = coins.size();
+    int MAX = amt + 1;
+    vector<int> dp(amt + 1, MAX);
+    dp[0] = 0;
+    for (int i = 1; i <= n; i++) {
+        for (int a = 1; a <= amt; a++) {
+            if (coins[i - 1] > a) {
+                dp[a] = dp[a];
+            } else {
+                dp[a] = min(dp[a], dp[a - coins[i - 1]] + 1);
+            }
+        }
+    }
+    return dp[amt] != MAX ? dp[amt] : -1;
+}
+
 int coinChangeIIDP(vector<int> &coins, int amt) {
      int n = coins.size();
     vector<vector<int>>dp(n+1, vector<int> (amt+1,0));
@@ -52,4 +82,20 @@ int coinChangeIIDP(vector<int> &coins, int amt) {
         }
     }
     return dp[n][amt];
+}
+
+int coinChangeIIDPComp(vector<int> &coins, int amt) {
+    int n = coins.size();
+    vector<int> dp(amt + 1, 0);
+    dp[0] = 1;
+    for (int i = 1; i <= n; i++) {
+        for (int a = 1; a <= amt; a++) {
+            if (coins[i - 1] > a) {
+                dp[a] = dp[a];
+            } else {
+                dp[a] = dp[a] + dp[a - coins[i - 1]];
+            }
+        }
+    }
+    return dp[amt];
 }

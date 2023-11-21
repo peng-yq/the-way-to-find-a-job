@@ -18,3 +18,25 @@ int editDistanceDP(string s, string t) {
     }
     return dp[n][m];
 }
+
+int editDistanceDPComp(string s, string t) {
+    int n = s.size(), m = t.size();
+    vector<int> dp (m+1, 0);
+    for (int i = 1; i < m+1; i++) {
+        dp[i] = i;
+    }
+    for (int i = 1; i < n+1; i++) {
+        int left = dp[0];
+        dp[0] = i;
+        for (int j = 1; j < m+1; j++) {
+            int temp = dp[j];
+            if (s[i-1] == t[j-1]) {
+                dp[j] = left;
+            } else {
+                dp[j] = min (dp[j-1], left, dp[j]) + 1;
+            }
+            left = temp;
+        }
+    }
+    return dp[m];
+}
