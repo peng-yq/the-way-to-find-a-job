@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 时间复杂度O(n+m)，空间复杂度O(1)
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
