@@ -20,3 +20,5 @@
 - [Pow(x, n)](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 - [字母异位词分组](https://leetcode.cn/problems/group-anagrams)
 - [验证二叉搜索树的后序遍历序列](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof)
+- [报数](https://leetcode.cn/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof)
+- [交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof)
