@@ -7,3 +7,4 @@
 - [ 推理二叉树](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof)
 - [Pow(x, n)](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 - [字母异位词分组](https://leetcode.cn/problems/group-anagrams)
+- [验证二叉搜索树的后序遍历序列](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof)
