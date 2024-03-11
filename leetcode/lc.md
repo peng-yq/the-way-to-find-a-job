@@ -23,3 +23,4 @@
 - [报数](https://leetcode.cn/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof)
 - [交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof)
 - [H 指数 II](https://leetcode.cn/problems/h-index-ii)
+- [破解闯关密码](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof)
