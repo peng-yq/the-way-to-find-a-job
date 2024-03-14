@@ -33,3 +33,4 @@
 - [破冰游戏](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof)
 - [数据流中的中位数](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof)
 - [游游的数组推平](https://mp.weixin.qq.com/s/5ODtHkS3hoFdXotjcYMKBw)
+- [游游的数组压缩](https://mp.weixin.qq.com/s/5ODtHkS3hoFdXotjcYMKBw)
