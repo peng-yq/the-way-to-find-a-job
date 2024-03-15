@@ -37,3 +37,4 @@
 - [撞色搭配](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof)
 - [训练计划 VI](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof)
 - [砍竹子 I](https://leetcode.cn/problems/jian-sheng-zi-lcof)
+- [砍竹子 II](https://leetcode.cn/problems/jian-sheng-zi-ii-lcof)
