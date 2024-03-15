@@ -34,3 +34,4 @@
 - [数据流中的中位数](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof)
 - [游游的数组推平](https://mp.weixin.qq.com/s/5ODtHkS3hoFdXotjcYMKBw)
 - [游游的数组压缩](https://mp.weixin.qq.com/s/5ODtHkS3hoFdXotjcYMKBw)
+- [撞色搭配](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof)
