@@ -41,3 +41,4 @@
 - [零钱兑换](https://leetcode.cn/problems/coin-change)
 - [编辑距离](https://leetcode.cn/problems/edit-distance)
 - [目标和](https://leetcode.cn/problems/target-sum)
+- [翻倍元素](https://mp.weixin.qq.com/s/vOmvwV5TcgVKJZq7niqpog)
