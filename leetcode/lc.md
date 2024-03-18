@@ -42,3 +42,4 @@
 - [编辑距离](https://leetcode.cn/problems/edit-distance)
 - [目标和](https://leetcode.cn/problems/target-sum)
 - [翻倍元素](https://mp.weixin.qq.com/s/vOmvwV5TcgVKJZq7niqpog)
+- [找到第 k 位数字](https://leetcode.cn/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof)
