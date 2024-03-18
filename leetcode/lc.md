@@ -44,3 +44,4 @@
 - [翻倍元素](https://mp.weixin.qq.com/s/vOmvwV5TcgVKJZq7niqpog)
 - [找到第 k 位数字](https://leetcode.cn/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof)
 - [数字 1 的个数](https://leetcode.cn/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof)
+- [模糊搜索验证](https://leetcode.cn/problems/zheng-ze-biao-da-shi-pi-pei-lcof)
