@@ -46,3 +46,4 @@
 - [数字 1 的个数](https://leetcode.cn/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof)
 - [模糊搜索验证](https://leetcode.cn/problems/zheng-ze-biao-da-shi-pi-pei-lcof)
 - [统计结果概率](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof)
+- [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence)
