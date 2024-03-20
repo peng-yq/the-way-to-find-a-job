@@ -47,3 +47,4 @@
 - [模糊搜索验证](https://leetcode.cn/problems/zheng-ze-biao-da-shi-pi-pei-lcof)
 - [统计结果概率](https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof)
 - [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence)
+- [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/description/)
