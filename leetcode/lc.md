@@ -50,3 +50,4 @@
 - [删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/description/)
 - [括号生成](https://leetcode.cn/problems/generate-parentheses/description/)
 - [三数之和](https://leetcode.cn/problems/3sum)
+- [接雨水](https://leetcode.cn/problems/trapping-rain-water)
