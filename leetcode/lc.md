@@ -53,3 +53,4 @@
 - [接雨水](https://leetcode.cn/problems/trapping-rain-water)
 - [每日温度](https://leetcode.cn/problems/daily-temperatures)
 - [找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string)
+- [和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k)
