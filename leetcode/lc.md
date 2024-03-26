@@ -59,3 +59,5 @@
 - [合并区间](https://leetcode.cn/problems/merge-intervals)
 - [轮转数组](https://leetcode.cn/problems/rotate-array)
 - [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes)
+- [旋转图像](https://leetcode.cn/problems/rotate-image)
+- [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix)
