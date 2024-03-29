@@ -62,3 +62,4 @@
 - [旋转图像](https://leetcode.cn/problems/rotate-image)
 - [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix)
 - [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists)
+- [回文链表](https://leetcode.cn/problems/palindrome-linked-list)
