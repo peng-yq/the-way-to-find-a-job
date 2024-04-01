@@ -68,3 +68,5 @@
 - [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list)
 - [两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs)
 - [随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer)
+- [排序链表](https://leetcode.cn/problems/sort-list)
+- [LRU 缓存](https://leetcode.cn/problems/lru-cache)
