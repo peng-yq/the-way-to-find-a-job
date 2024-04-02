@@ -70,3 +70,4 @@
 - [随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer)
 - [排序链表](https://leetcode.cn/problems/sort-list)
 - [LRU 缓存](https://leetcode.cn/problems/lru-cache)
+- [在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array)
