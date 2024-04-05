@@ -73,3 +73,4 @@
 - [在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array)
 - [搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array)
 - [寻找峰值](https://leetcode.cn/problems/find-peak-element)
+- [验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree)
