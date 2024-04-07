@@ -78,3 +78,5 @@
 - [二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list)
 - [从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal)
 - [路径总和 III](https://leetcode.cn/problems/path-sum-iii)
+- [单词搜索](https://leetcode.cn/problems/word-search)
+- [岛屿数量](https://leetcode.cn/problems/number-of-islands)
