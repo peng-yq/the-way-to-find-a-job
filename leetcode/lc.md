@@ -82,3 +82,4 @@
 - [岛屿数量](https://leetcode.cn/problems/number-of-islands)
 - [图像渲染](https://leetcode.cn/problems/flood-fill)
 - [腐烂的橘子](https://leetcode.cn/problems/rotting-oranges)
+- [课程表](https://leetcode.cn/problems/course-schedule/description)
