@@ -87,3 +87,4 @@
 - [子集](https://leetcode.cn/problems/subsets)
 - [电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number)
 - [分割回文串](https://leetcode.cn/problems/palindrome-partitioning)
+- [N皇后](https://leetcode.cn/problems/n-queens)
