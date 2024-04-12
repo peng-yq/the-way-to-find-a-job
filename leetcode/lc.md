@@ -91,3 +91,4 @@
 - [最长回文串](https://leetcode.cn/problems/longest-palindrome)
 - [寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays)
 - [字符串解码](https://leetcode.cn/problems/decode-string)
+- [柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram)
