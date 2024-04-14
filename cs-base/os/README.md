@@ -1,0 +1,1 @@
+主要参考[小林coding—图解系统](https://www.xiaolincoding.com/os)，顺带之前记录的MIT—S6.081。
