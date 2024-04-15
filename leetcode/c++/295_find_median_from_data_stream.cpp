@@ -4,10 +4,10 @@
 using namespace std;
 
 class MedianFinder {
-public:
-    // 创建大小堆使得在添加元素时就使得元素有序，使用sort则会超时
+private:
     priority_queue<int, vector<int>, greater<int>> A;
     priority_queue<int, vector<int>, less<int>> B;
+public:
     MedianFinder() {
 
     }
