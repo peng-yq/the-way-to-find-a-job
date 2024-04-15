@@ -94,3 +94,4 @@
 - [柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram)
 - [下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii)
 - [数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array)
+- [前 K 个高频元素](https://leetcode.cn/problems/top-k-frequent-elements)
