@@ -79,13 +79,13 @@ Netty和Memcache都采用了多 Reactor 多线程的方案。采用了多 Reacto
 
 <img src="https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/%E9%98%BB%E5%A1%9E%20I_O.png">
 
-非阻塞I/O：内核没准备好数据前，进程可以去做其他事；过段时间再次发起调用，若内核已经准备好数据，需要等待内核将数据拷贝至用户缓冲区。
+非阻塞I/O：内核没准备好数据前（也就是会立刻返回正确或错误），进程可以去做其他事；过段时间再次发起调用，若内核已经准备好数据，需要等待内核将数据拷贝至用户缓冲区。
 
 <img src="https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/%E9%9D%9E%E9%98%BB%E5%A1%9E%20I_O%20.png">
 
 不管是阻塞I/O还是非阻塞I/O，这两者都是同步的，内核将数据从内核空间拷贝到用户空间的过程都是需要等待的，也就是说这个过程是同步的，如果内核实现的拷贝效率不高，read调用就会在这个同步过程中等待比较长的时间。
 
-异步I/O：进程发起调用后，去做其他事；内核将数据拷贝至用户缓冲区后，通知进程进行处理。
+异步I/O：进程发起调用后，去做其他事；内核将数据拷贝至用户缓冲区后，通知进程进行处理（关键就在此，异步I/O是基于事件通知的）。
 
 <img src="https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/%E5%BC%82%E6%AD%A5%20I_O.png">
 
