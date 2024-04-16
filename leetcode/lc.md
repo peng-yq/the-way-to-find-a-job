@@ -96,3 +96,5 @@
 - [数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array)
 - [前 K 个高频元素](https://leetcode.cn/problems/top-k-frequent-elements)
 - [设计哈希集合](https://leetcode.cn/problems/design-hashset)
+- [跳跃游戏](https://leetcode.cn/problems/jump-game)
+- [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii)
