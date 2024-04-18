@@ -99,3 +99,4 @@
 - [跳跃游戏](https://leetcode.cn/problems/jump-game)
 - [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii)
 - [打家劫舍](https://leetcode.cn/problems/house-robber)
+- [完全平方数](https://leetcode.cn/problems/perfect-squares)
