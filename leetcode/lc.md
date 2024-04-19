@@ -101,3 +101,4 @@
 - [打家劫舍](https://leetcode.cn/problems/house-robber)
 - [完全平方数](https://leetcode.cn/problems/perfect-squares)
 - [单词拆分](https://leetcode.cn/problems/word-break)
+- [乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray)
