@@ -104,3 +104,4 @@
 - [乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray)
 - [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii)
 - [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum)
+- [最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses)
