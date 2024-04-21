@@ -107,3 +107,4 @@
 - [最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses)
 - [多数元素](https://leetcode.cn/problems/majority-element)
 - [颜色分类](https://leetcode.cn/problems/sort-colors)
+- [下一个排列](https://leetcode.cn/problems/next-permutation)
