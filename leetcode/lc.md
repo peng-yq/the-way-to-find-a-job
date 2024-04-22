@@ -108,3 +108,4 @@
 - [多数元素](https://leetcode.cn/problems/majority-element)
 - [颜色分类](https://leetcode.cn/problems/sort-colors)
 - [下一个排列](https://leetcode.cn/problems/next-permutation)
+- [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number)
