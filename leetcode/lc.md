@@ -113,3 +113,4 @@
 - [最小路径和](https://leetcode.cn/problems/minimum-path-sum)
 - [回文子串](https://leetcode.cn/problems/palindromic-substrings)
 - [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring)
+- [爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner)
