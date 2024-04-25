@@ -20,3 +20,17 @@ public:
 // 因此我们直接用原数组做哈希表，索引为i的位置保存元素i，如果在遍历的过程中发现documents[i] == documents[documents[i]]
 // 说明这个元素重复
 // 怎么遍历呢？如果documents[i] == i，那检查下一个元素，如果不相等，则一致交换直到满足条件。
+class Solution {
+public:
+    int findRepeatDocument(vector<int>& documents) {
+        int n = documents.size();
+        for (int i = 0; i < n; ++i) {
+            while (documents[i] != i) {
+                if (documents[i] == documents[documents[i]])
+                    return documents[i];
+                swap(documents[i], documents[documents[i]]);
+            }
+        }
+        return -1;
+    }
+};
