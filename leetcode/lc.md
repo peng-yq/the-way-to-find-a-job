@@ -119,3 +119,4 @@
 - [长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum)
 - [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring)
 - [寻找文件副本](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)
+- [缺失的第一个正数](https://leetcode.cn/problems/first-missing-positive)
