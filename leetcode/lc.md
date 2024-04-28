@@ -123,3 +123,4 @@
 - [快照数组](https://leetcode.cn/problems/snapshot-array)
 - [负二进制转换](https://leetcode.cn/problems/convert-to-base-2)
 - [反转链表](https://leetcode.cn/problems/reverse-linked-list)
+- [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group)
