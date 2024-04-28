@@ -121,3 +121,4 @@
 - [寻找文件副本](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)
 - [缺失的第一个正数](https://leetcode.cn/problems/first-missing-positive)
 - [快照数组](https://leetcode.cn/problems/snapshot-array)
+- [负二进制转换](https://leetcode.cn/problems/convert-to-base-2)
