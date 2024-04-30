@@ -126,3 +126,4 @@
 - [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group)
 - [复原 IP 地址](https://leetcode.cn/problems/restore-ip-addresses)
 - [合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists)
+- [二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum)
