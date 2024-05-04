@@ -129,3 +129,4 @@
 - [二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum)
 - [雇佣 K 位工人的总代价](https://leetcode.cn/problems/total-cost-to-hire-k-workers)
 - [雇佣 K 名工人的最低成本](https://leetcode.cn/problems/minimum-cost-to-hire-k-workers)
+- [规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling)
