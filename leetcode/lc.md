@@ -135,3 +135,4 @@
 - [摘樱桃 II](https://leetcode.cn/problems/cherry-pickup-ii)
 - [吃掉 N 个橘子的最少天数](https://leetcode.cn/problems/minimum-number-of-days-to-eat-n-oranges)
 - [完成所有任务需要的最少轮数](https://leetcode.cn/problems/minimum-rounds-to-complete-all-tasks)
+- [你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work)
