@@ -137,3 +137,4 @@
 - [完成所有任务需要的最少轮数](https://leetcode.cn/problems/minimum-rounds-to-complete-all-tasks)
 - [你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work)
 - [重构字符串](https://leetcode.cn/problems/reorganize-string)
+- [找出数组游戏的赢家](https://leetcode.cn/problems/find-the-winner-of-an-array-game)
