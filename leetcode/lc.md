@@ -138,3 +138,4 @@
 - [你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work)
 - [重构字符串](https://leetcode.cn/problems/reorganize-string)
 - [找出数组游戏的赢家](https://leetcode.cn/problems/find-the-winner-of-an-array-game)
+- [构建回文串检测](https://leetcode.cn/problems/can-make-palindrome-from-substring)
