@@ -140,3 +140,4 @@
 - [找出数组游戏的赢家](https://leetcode.cn/problems/find-the-winner-of-an-array-game)
 - [构建回文串检测](https://leetcode.cn/problems/can-make-palindrome-from-substring)
 - [找出最长的超赞子字符串](https://leetcode.cn/problems/find-longest-awesome-substring)
+- [每个元音包含偶数次的最长子字符串](https://leetcode.cn/problems/find-the-longest-substring-containing-vowels-in-even-counts)
