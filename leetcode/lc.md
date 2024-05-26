@@ -143,3 +143,4 @@
 - [每个元音包含偶数次的最长子字符串](https://leetcode.cn/problems/find-the-longest-substring-containing-vowels-in-even-counts)
 - [找出最长等值子数组](https://leetcode.cn/problems/find-the-longest-equal-subarray)
 - [找出最具竞争力的子序列](https://leetcode.cn/problems/find-the-most-competitive-subsequence)
+- [找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value)
