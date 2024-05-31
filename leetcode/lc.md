@@ -145,3 +145,4 @@
 - [找出最具竞争力的子序列](https://leetcode.cn/problems/find-the-most-competitive-subsequence)
 - [找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value)
 - [找出出现至少三次的最长特殊子字符串 II](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii)
+- [给小朋友们分糖果 I](https://leetcode.cn/problems/distribute-candies-among-children-i)
