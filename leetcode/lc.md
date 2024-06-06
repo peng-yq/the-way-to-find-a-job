@@ -146,3 +146,4 @@
 - [找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value)
 - [找出出现至少三次的最长特殊子字符串 II](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii)
 - [给小朋友们分糖果 I](https://leetcode.cn/problems/distribute-candies-among-children-i)
+- [在带权树网络中统计可连接服务器对数目](https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network)
