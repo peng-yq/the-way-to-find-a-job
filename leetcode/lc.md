@@ -148,3 +148,4 @@
 - [给小朋友们分糖果 I](https://leetcode.cn/problems/distribute-candies-among-children-i)
 - [在带权树网络中统计可连接服务器对数目](https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network)
 - [相同分数的最大操作数目 II](https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-ii)
+- [戳气球](https://leetcode.cn/problems/burst-balloons)
