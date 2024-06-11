@@ -105,7 +105,6 @@
 - [只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii)
 - [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum)
 - [最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses)
-- [多数元素](https://leetcode.cn/problems/majority-element)
 - [颜色分类](https://leetcode.cn/problems/sort-colors)
 - [下一个排列](https://leetcode.cn/problems/next-permutation)
 - [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number)
@@ -149,3 +148,4 @@
 - [在带权树网络中统计可连接服务器对数目](https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network)
 - [相同分数的最大操作数目 II](https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-ii)
 - [戳气球](https://leetcode.cn/problems/burst-balloons)
+- [O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1)
