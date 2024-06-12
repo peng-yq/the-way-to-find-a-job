@@ -149,3 +149,4 @@
 - [相同分数的最大操作数目 II](https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-ii)
 - [戳气球](https://leetcode.cn/problems/burst-balloons)
 - [O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1)
+- [加油站](https://leetcode.cn/problems/gas-station)
