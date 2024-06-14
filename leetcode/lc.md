@@ -155,3 +155,4 @@
 - [串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words)
 - [访问数组中的位置使分数最大](https://leetcode.cn/problems/visit-array-positions-to-maximize-score)
 - [有效的数独](https://leetcode.cn/problems/valid-sudoku)
+- [生命游戏](https://leetcode.cn/problems/game-of-life)
