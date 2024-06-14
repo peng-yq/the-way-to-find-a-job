@@ -156,3 +156,4 @@
 - [访问数组中的位置使分数最大](https://leetcode.cn/problems/visit-array-positions-to-maximize-score)
 - [有效的数独](https://leetcode.cn/problems/valid-sudoku)
 - [生命游戏](https://leetcode.cn/problems/game-of-life)
+- [快乐数](https://leetcode.cn/problems/happy-number)
