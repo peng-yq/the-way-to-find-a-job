@@ -158,3 +158,4 @@
 - [生命游戏](https://leetcode.cn/problems/game-of-life)
 - [快乐数](https://leetcode.cn/problems/happy-number)
 - [数组的最大美丽值](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation)
+- [最长特殊序列 Ⅰ](https://leetcode.cn/problems/longest-uncommon-subsequence-i)
