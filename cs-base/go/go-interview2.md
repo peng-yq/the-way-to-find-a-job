@@ -334,3 +334,67 @@ Go语言的`context`包主要用于管理和传递取消信号、超时通知和
 1. **取消信号**：在多个goroutine之间传递取消信号，用于停止操作和释放资源。
 2. **超时控制**：设定操作的超时时间，超时后自动发送取消信号。
 3. **传递请求相关的数据**：在API的调用链中传递请求特定的数据，如用户身份信息、追踪ID等。
+
+#### defer、panic和recover
+
+1. defer：预定一个函数调用，这个函数会在包含他的函数结束时执行，不管是正常退出还是panic，常用于资源清理，比如关闭文件和数据库连接。如果一个函数中有多个defer，执行顺序为后进先出（栈，以及资源依赖）。
+2. panic：触发一个运行时错误，会立刻停止当前函数的运行，逐层向上执行defer语句，除非被recover捕获，用于处理不可恢复的错误。
+3. recover：用于捕获或恢复一个pannic，只有在defer中调用panic才有用，会终止panic的连锁反应，返回panic时传递的错误值。
+
+```go
+package main
+
+import "fmt"
+
+func riskyFunction() {
+    defer func() {
+        if r := recover(); r != nil {
+            fmt.Println("Recovered from panic:", r)
+        }
+    }()
+    fmt.Println("Performing some task")
+    if true {
+        panic("something bad happened")
+    }
+    fmt.Println("This will not be printed")
+}
+
+func main() {
+    riskyFunction()
+    fmt.Println("Program continues after recovery")
+}
+```
+
+#### go中的slice和数组有什么区别，slice的底层是什么
+
+1. 数组大小在声明时就确定了，并且不能改变
+2. 切片可以根据需要动态扩展或收缩
+3. 数组是值类型，赋值给新变量，会进行整个数组的改变；切片是引用类型，赋值时不会拷贝数据本身，而是拷贝对底层数据的引用
+
+切片的底层是一个数组，切片结构体包括三个元素：
+
+1. 指针：指向底层数组的第一个元素的位置
+2. 容量：当前底层数组所能包含的最大元素数量
+3. 长度：当前底层数组中的元素数量
+
+切片的动态扩展是通过创建一个更大的数组并复制现有元素来实现的。这个过程通常由`append`函数自动管理。当切片的元素超过其容量时，Go运行时会分配一个新的数组，一般是当前容量的两倍，然后将原有数据复制到新数组中，从而实现切片的扩容。
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    arr := [5]int{1, 2, 3, 4, 5} // 数组
+    slc := []int{1, 2, 3, 4, 5} // 切片
+
+    arrSlc := arr[:] // 从数组创建切片
+    slc2 := slc[:] // 创建切片的另一个视图
+
+    fmt.Println(arr) // 输出数组
+    fmt.Println(slc) // 输出切片
+    fmt.Println(arrSlc) // 输出从数组创建的切片
+    fmt.Println(slc2) // 输出切片的另一个视图
+}
+```
+
