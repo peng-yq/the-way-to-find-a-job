@@ -1,5 +1,12 @@
 ### 事务及事务的特性
 
+mysql中事务的操作语句：
+
+1. 开始：`START TRANSACTION;`或`BEGIN;`
+2. 执行事务的操作
+3. 提交：`COMMIT;`
+4. 回滚：`ROLLBACK;`
+
 **事务：**要么全部执行成功，要么全部执行失败。有数据库操作执行完成后，才提交事务，对于已经提交的事务来说，该事务对数据库所做的修改将永久生效，如果中途发生发生中断或错误，那么该事务期间对数据库所做的修改将会被回滚到没执行该事务之前的状态。
 
 **事务是由 MySQL 的引擎来实现的，InnoDB 引擎是支持事务的， MyISAM 引擎就不支持事务**。
@@ -182,3 +189,85 @@ Read View 有四个重要的字段：
 事务 B 在找到小林这条记录时，**会发现这条记录的 trx_id 是 51，比事务 B 的 Read View 中的 min_trx_id 值（52）还小，这意味着修改这条记录的事务早就在创建 Read View 前提交过了，所以该版本的记录对事务 B 是可见的**。
 
 正是因为在读提交隔离级别下，事务每次读数据时都重新创建 Read View，那么在事务期间的多次读取同一条数据，前后两次读的数据可能会出现不一致，因为可能这期间另外一个事务修改了该记录，并提交了事务。
+
+### MySQL当前读是如何避免幻读的？
+
+MySQL 里除了普通查询是快照读，其他都是**当前读，比如 update、insert、delete，这些语句执行前都会查询最新版本的数据，然后再做进一步的操作。这很好理解，假设你要 update 一个记录，另一个事务已经 delete 这条记录并且提交事务了，这样不是会产生冲突吗，所以 update 的时候肯定要知道最新的数据**。
+
+**Innodb 引擎为了解决「可重复读」隔离级别使用「当前读」而造成的幻读问题，就引出了间隙锁**。假设，表中有一个范围 id 为（3，5）间隙锁，那么其他事务就无法插入 id = 4 这条记录了，这样就有效的防止幻读现象的发生。
+
+![img](https://cdn.xiaolincoding.com/gh/xiaolincoder/mysql/%E9%94%81/gap%E9%94%81.drawio.png)
+
+举个具体例子，场景如下：
+
+![img](https://cdn.xiaolincoding.com//mysql/other/3af285a8e70f4d4198318057eb955520.png)
+
+事务 A 执行了这面这条锁定读语句后，就在**对表中的记录加上 id 范围为 (2, +∞] 的 next-key lock（next-key lock 是间隙锁+记录锁的组合）**。然后，事务 B 在执行插入语句的时候，判断到插入的位置被事务 A 加了 next-key lock，于是事物 B 会生成一个插入意向锁，同时进入等待状态，直到事务 A 提交了事务。这就避免了由于事务 B 插入新记录而导致事务 A 发生幻读的现象。
+
+### 幻读被完全解决了吗？
+
+**可重复读隔离级别下虽然很大程度上避免了幻读，但是还是没有能完全解决幻读**。
+
+#### 第一个发生幻读现象的场景
+
+![img](https://cdn.xiaolincoding.com//mysql/other/7f9df142b3594daeaaca495abb7133f5-20230309222119359.png)
+
+事务 A 执行查询 id = 5 的记录，此时表中是没有该记录的，所以查询不出来。
+
+```sql
+# 事务 A
+mysql> begin;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from t_stu where id = 5;
+Empty set (0.01 sec)
+```
+
+然后事务 B 插入一条 id = 5 的记录，并且提交了事务。
+
+```sql
+# 事务 B
+mysql> begin;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into t_stu values(5, '小美', 18);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+```
+
+此时，**事务 A 更新 id = 5 这条记录，对没错，事务 A 看不到 id = 5 这条记录，但是他去更新了这条记录，这场景确实很违和，然后再次查询 id = 5 的记录，事务 A 就能看到事务 B 插入的纪录了，幻读就是发生在这种违和的场景**。
+
+```sql
+# 事务 A
+mysql> update t_stu set name = '小林coding' where id = 5;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from t_stu where id = 5;
++----+--------------+------+
+| id | name         | age  |
++----+--------------+------+
+|  5 | 小林coding   |   18 |
++----+--------------+------+
+1 row in set (0.00 sec)
+```
+
+整个发生幻读的时序图如下：
+
+![img](https://cdn.xiaolincoding.com/gh/xiaolincoder/mysql/%E9%94%81/%E5%B9%BB%E8%AF%BB%E5%8F%91%E7%94%9F.drawio.png)
+
+在可重复读隔离级别下，事务 A 第一次执行普通的 select 语句时生成了一个 ReadView，之后事务 B 向表中新插入了一条 id = 5 的记录并提交。接着，事务 A 对 id = 5 这条记录进行了更新操作，在这个时刻，这条新记录的 trx_id 隐藏列的值就变成了事务 A 的事务 id，之后事务 A 再使用普通 select 语句去查询这条记录时就可以看到这条记录了，于是就发生了幻读。
+
+因为这种特殊现象的存在，所以我们认为 **MySQL Innodb 中的 MVCC 并不能完全避免幻读现象**。
+
+#### 第二个发生幻读现象的场景
+
+除了上面这一种场景会发生幻读现象之外，还有下面这个场景也会发生幻读现象。
+
+- T1 时刻：事务 A 先执行「快照读语句」：select * from t_test where id > 100 得到了 3 条记录。
+- T2 时刻：事务 B 往插入一个 id= 200 的记录并提交；
+- T3 时刻：事务 A 再执行「当前读语句」 select * from t_test where id > 100 for update 就会得到 4 条记录，此时也发生了幻读现象。
+
+**要避免这类特殊场景下发生幻读的现象的话，就是尽量在开启事务之后，马上执行 select ... for update 这类当前读的语句**，因为它会对记录加 next-key lock，从而避免其他事务插入一条新记录。
